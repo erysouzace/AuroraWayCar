@@ -1,1 +1,313 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Inter', sans-serif; /* Fonte mais moderna */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #222;
+}
+
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+section {
+    padding: 60px 20px;
+    position: relative;
+}
+
+/* Botões */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #6a5ff7, #8e75ff);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #4f46e5;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #4f46e5;
+    border: 2px solid #4f46e5;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e7ff;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Hero */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    padding: 100px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Animação fadeInUp */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Seção de Benefícios */
+.benefits-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card i {
+    font-size: 3.5rem;
+    color: #6a5ff7;
+    margin-bottom: 20px;
+}
+
+/* Seção para Motoristas */
+.drivers-section {
+    background: linear-gradient(135deg, #e0e7ff, #f9f9f9);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.driver-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-item i {
+    font-size: 3.5rem;
+    color: #6a5ff7;
+    margin-bottom: 20px;
+}
+
+/* Depoimentos de Usuários */
+.testimonials-section {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.testimonial-card p strong {
+    display: block;
+    margin-top: 15px;
+    color: #6a5ff7;
+}
+
+/* Chamada para Ação Final */
+.call-to-action {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 80px 20px;
+    }
+  
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+  
+    .testimonials-container,
+    .features-container,
+    .driver-benefits {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-secondary {
+        padding: 15px 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .call-to-action h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        padding: 18px 40px;
+    }
+
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .call-to-action {
+        padding: 60px 15px;
+    }
+}
